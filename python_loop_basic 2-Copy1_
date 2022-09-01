@@ -1,0 +1,1037 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b6086937",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Loops:- repetation of process until we get a suoitable output."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "90785832",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# for  example:-we want to learn bike that how it will start.thus process repeating many times to learn one thing is basically\n",
+    "#               known as loop."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0f71f158",
+   "metadata": {},
+   "source": [
+    "#  * IN TECHNICAL TERMS:-\n",
+    "# TO AVOID REPEATATION USED LOOP."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "b7eea09d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Loop also gives some drawback in term of function.\n",
+    "# in future we are least familar with loop."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9f33b53",
+   "metadata": {},
+   "source": [
+    "# Types of loop:-\n",
+    "# 1.For loop.\n",
+    "# 2.while loop."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8b99e01c",
+   "metadata": {},
+   "source": [
+    "# For loop:- number of iteration and repetation.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "04fa436d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Syntax:\n",
+    "#       for variable in range(a,b):\n",
+    "#         print(variable)\n",
+    "\n",
+    "# here variable that is generally used is i,j,k.\n",
+    "# range():-this is function . here elements lies in the range that is called upper limit(U.L.=n-1)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e5a48758",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# program to print 0 to 10.\n",
+    "for i in range(10):         # here for loop make use of colon at the end.\n",
+    "    print(i)                # 10 is the upper limit and equal to n-1i.e.10-1=9,9-1=8....up to zero.\n",
+    "                            # n=10,9,8,7,.."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "c3c8b41c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to print number from 2 to 8.\n",
+    "for i in range(2,9):  #  here 9 taken as upper limit means \n",
+    "                       #   U.L=n-1 where n=9\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a756e86b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n",
+      "11\n",
+      "13\n",
+      "15\n",
+      "17\n",
+      "19\n",
+      "21\n",
+      "23\n",
+      "25\n",
+      "27\n",
+      "29\n",
+      "31\n",
+      "33\n",
+      "35\n",
+      "37\n",
+      "39\n",
+      "41\n",
+      "43\n",
+      "45\n",
+      "47\n",
+      "49\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to print from 1 to 50.try to print numbers in alternative way.\n",
+    "for i in range(1,51,2):\n",
+    "    print(i)\n",
+    "                            # here 1 = starting point.\n",
+    "                         # 51=ending point.the formula for ending point also n-1.hence n=51 and 51-1=50.thus in this way \n",
+    "                          #  we will get 50 as we want to print 50.\n",
+    "                         # 2=step size or skip point.the formulae for step size as same as end point i.e.n-1.the step size taken \n",
+    "                        # because we want to print alernate numbers. so2-1 =1. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "f199fa0e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n",
+      "11\n",
+      "12\n",
+      "13\n",
+      "14\n",
+      "15\n",
+      "16\n",
+      "17\n",
+      "18\n",
+      "19\n",
+      "20\n",
+      "21\n",
+      "22\n",
+      "23\n",
+      "24\n",
+      "25\n",
+      "26\n",
+      "27\n",
+      "28\n",
+      "29\n",
+      "30\n",
+      "31\n",
+      "32\n",
+      "33\n",
+      "34\n",
+      "35\n",
+      "36\n",
+      "37\n",
+      "38\n",
+      "39\n",
+      "40\n",
+      "41\n",
+      "42\n",
+      "43\n",
+      "44\n",
+      "45\n",
+      "46\n",
+      "47\n",
+      "48\n",
+      "49\n",
+      "50\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,51,1):   # here skip point if taken 1 then n=1 and n-1=0 .skip of 1 number do not occur and hence we will get\n",
+    "    print(i)              # serialwise numbers 1 to 50. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a288ea26",
+   "metadata": {},
+   "source": [
+    "# While loop:-Three steps followed:\n",
+    "# 1.Initialize.\n",
+    "# 2.Condition.\n",
+    "# 3.Increment/Decrement."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "435677ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Example:- print 1 to 10;\n",
+    "# 1.assign or initialize the value to any variable.\n",
+    "#2.take condition.\n",
+    "#3.increment and decrement according to the question.\n",
+    "x=0  # initialize\n",
+    "while x<10:  # condition.\n",
+    "    x=x+1  # here increment by 1.\n",
+    "    print(x)\n",
+    "\n",
+    " \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "c4e3431f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# INCREMENT OPERATOR:-\n",
+    "# Increment done by many ways like\n",
+    "# x=x+1\n",
+    "# x+=1\n",
+    "# x++ \n",
+    "\n",
+    "# in case of while loop we will make use of x+1 or x+=1."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "79b2090c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# DECREMENT OPERATOR:-\n",
+    "# decrement done by many ways:-\n",
+    "# x="
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "4516faf2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# rpogram to print 1 to 10 .\n",
+    "x=0\n",
+    "while x<9:\n",
+    "    x=x+1\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "55d581a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-1\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Write a program to print -1 to 10.\n",
+    "for i in range(-1,11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "5d021573",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-1\n",
+      "-2\n",
+      "-3\n",
+      "-4\n",
+      "-5\n",
+      "-6\n",
+      "-7\n",
+      "-8\n",
+      "-9\n",
+      "-10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Write a program to print -1 to -10.\n",
+    "for i in range(-1,-11,-1):  #  here -1=skip size thagt is required to print in the as shown in output.\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "965fc70d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-11\n",
+      "-10\n",
+      "-9\n",
+      "-8\n",
+      "-7\n",
+      "-6\n",
+      "-5\n",
+      "-4\n",
+      "-3\n",
+      "-2\n",
+      "-1\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(-11,0): # if this way followed then we get the output in reverse form.\n",
+    "                       #hence we follow above method to represent the output in system-matic way according to required questions.\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "4d1c23e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n",
+      "12\n",
+      "14\n",
+      "16\n",
+      "18\n",
+      "20\n",
+      "22\n",
+      "24\n",
+      "26\n",
+      "28\n",
+      "30\n",
+      "32\n",
+      "34\n",
+      "36\n",
+      "38\n",
+      "40\n",
+      "42\n",
+      "44\n",
+      "46\n",
+      "48\n",
+      "50\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to print even numbers 1 to 51.\n",
+    "for i in range(1,52):\n",
+    "    if i%2==0:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "bb7141c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "count 1\n",
+      "4\n",
+      "count 2\n",
+      "6\n",
+      "count 3\n",
+      "8\n",
+      "count 4\n",
+      "10\n",
+      "count 5\n",
+      "12\n",
+      "count 6\n",
+      "14\n",
+      "count 7\n",
+      "16\n",
+      "count 8\n",
+      "18\n",
+      "count 9\n",
+      "20\n",
+      "count 10\n",
+      "22\n",
+      "count 11\n",
+      "24\n",
+      "count 12\n",
+      "26\n",
+      "count 13\n",
+      "28\n",
+      "count 14\n",
+      "30\n",
+      "count 15\n",
+      "32\n",
+      "count 16\n",
+      "34\n",
+      "count 17\n",
+      "36\n",
+      "count 18\n",
+      "38\n",
+      "count 19\n",
+      "40\n",
+      "count 20\n",
+      "42\n",
+      "count 21\n",
+      "44\n",
+      "count 22\n",
+      "46\n",
+      "count 23\n",
+      "48\n",
+      "count 24\n",
+      "50\n",
+      "count 25\n"
+     ]
+    }
+   ],
+   "source": [
+    "# also try to count even numbers .same condition repeat with odd numbers.\n",
+    "count=0\n",
+    "for i in range(1,52):\n",
+    "    if i%2==0:\n",
+    "        count=count+1\n",
+    "        print(i)\n",
+    "        print(\"count\",count) # here intendenation space  foloowed hence count will print after each value."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "97936064",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n",
+      "12\n",
+      "14\n",
+      "16\n",
+      "18\n",
+      "20\n",
+      "22\n",
+      "24\n",
+      "26\n",
+      "28\n",
+      "30\n",
+      "32\n",
+      "34\n",
+      "36\n",
+      "38\n",
+      "40\n",
+      "42\n",
+      "44\n",
+      "46\n",
+      "48\n",
+      "50\n",
+      "count 25\n"
+     ]
+    }
+   ],
+   "source": [
+    "count=0\n",
+    "for i in range(1,52):\n",
+    "    if i%2==0:\n",
+    "        print(i)\n",
+    "        count=count+1\n",
+    "print(\"count\",count)  # here intendenation space not foloowed hence count will print at the end."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6ed690d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21\n",
+      "23\n",
+      "25\n",
+      "27\n",
+      "29\n",
+      "31\n",
+      "33\n",
+      "35\n",
+      "37\n",
+      "39\n",
+      "41\n",
+      "43\n",
+      "45\n",
+      "47\n",
+      "49\n",
+      "51\n",
+      "53\n",
+      "55\n",
+      "57\n",
+      "59\n",
+      "61\n",
+      "63\n",
+      "65\n",
+      "67\n",
+      "69\n",
+      "71\n",
+      "73\n",
+      "75\n",
+      "77\n",
+      "79\n"
+     ]
+    }
+   ],
+   "source": [
+    "#program to print odd number between 20 to 80.also try to count the numbers.\n",
+    "for i in range (20,81):\n",
+    "    if i%2!=0:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "68ee61ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n",
+      "11\n",
+      "13\n",
+      "15\n",
+      "17\n",
+      "19\n",
+      "21\n",
+      "23\n",
+      "25\n",
+      "27\n",
+      "29\n",
+      "31\n",
+      "33\n",
+      "35\n",
+      "37\n",
+      "39\n",
+      "41\n",
+      "43\n",
+      "45\n",
+      "47\n",
+      "49\n",
+      "51\n",
+      "53\n",
+      "55\n",
+      "57\n",
+      "59\n",
+      "61\n",
+      "63\n",
+      "65\n",
+      "67\n",
+      "69\n",
+      "71\n",
+      "73\n",
+      "75\n",
+      "77\n",
+      "79\n",
+      " count 39\n"
+     ]
+    }
+   ],
+   "source": [
+    "count=0\n",
+    "for i in range(2,81):\n",
+    "    if i%2!=0:\n",
+    "        print(i)\n",
+    "        count=count+1\n",
+    "print(\" count\",count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a7ab5ff2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "0\n",
+      "-1\n",
+      "-2\n",
+      "-3\n",
+      "-4\n",
+      "-5\n",
+      "-6\n",
+      "-7\n",
+      "-8\n",
+      "-9\n",
+      "-10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to print 1to-10.\n",
+    "for i in range(1,-11,-1):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d77f4a16",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "h\n",
+      "e\n",
+      "l\n",
+      "l\n",
+      "o\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to check a string is reversed or not.\n",
+    "#here we use string not range function.\n",
+    "\n",
+    "x='hello'\n",
+    "for i in x:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "9dfaff1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "h\n",
+      "\n",
+      "e\n",
+      "h\n",
+      "l\n",
+      "eh\n",
+      "l\n",
+      "leh\n",
+      "o\n",
+      "lleh\n"
+     ]
+    }
+   ],
+   "source": [
+    "# for reverse we will take another variable.\n",
+    "\n",
+    "x='hello'\n",
+    "y= ''\n",
+    "for i in x:\n",
+    "    print(i)\n",
+    "    print(y) # if  print(y) is wriiten before incrementing y=i+y then we get below output,\n",
+    "    y=i+y    # incrementing y=i+y.\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "4c470429",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b\n",
+      "b\n",
+      "a\n",
+      "ab\n",
+      "b\n",
+      "bab\n",
+      "u\n",
+      "ubab\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='babu'\n",
+    "y=''          # here we take a string babu that will store in x ,and we use another variable y that sotres blank string.\n",
+    "               # proper string not assigned so that we get oue requiremnt reverse of babu.\n",
+    "for i in x:    # her ww always use for loop in case of reversing string or mostly for loop is used in python.\n",
+    "    print(i)   \n",
+    "    \n",
+    "    y=i+y      # here we incrementing the srtring .\n",
+    "    print(y)    # here we follow intendent space if this is followed then we get output given below i this way,"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "8ea2f9a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b\n",
+      "a\n",
+      "b\n",
+      "u\n",
+      "ubab\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='babu'\n",
+    "y=''\n",
+    "for i in x:\n",
+    "    print(i)\n",
+    "    y=i+y\n",
+    "print(y)   # Same process repeated but we don't followintendent space that we get output in in this way."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "28c66c1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "u\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='vishnu' #here we don't use for loop hence we get last variable of string vishnu is u\n",
+    "y=''\n",
+    "y=i+y\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "b1490787",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "avihs\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='shiva'\n",
+    "y=''\n",
+    "for i in x:\n",
+    "             # here we don't use print(i) . thus we get reverse output as we want not above procedure.\n",
+    "    y=i+y\n",
+    "print(y)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "52afeb28",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "nitin\n",
+      "NR\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write a program to check a string is panidrome or not.\n",
+    "# Panidrome simly means that we studied in reverse or unreverse form we will get same output.e.g.like nitin,wow,1111,2222,11 etc.\n",
+    "# ultha pado ya seedha pado sab ek jisa hot hai.\n",
+    "x='nitin'\n",
+    "y=''\n",
+    "for i in x:\n",
+    "    \n",
+    "    y=i+y\n",
+    "print(y)  \n",
+    "if x !=y:\n",
+    "    print('reverse')\n",
+    "else:\n",
+    "    print('NR')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "f6717c07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "nitin\n",
+      "reverse\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='nitin'\n",
+    "y=''\n",
+    "for i in x:\n",
+    "    \n",
+    "    y=i+y\n",
+    "print(y)\n",
+    "if x ==y:\n",
+    "    print('reverse')\n",
+    "else:\n",
+    "    print('NR')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "34eaecd2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "wow\n",
+      "reverse\n"
+     ]
+    }
+   ],
+   "source": [
+    "x='wow'\n",
+    "y=''\n",
+    "for i in x:\n",
+    "    y=i+y    #with the help of y=i+y\n",
+    "print(y)  # here  intendentation space not followed by print(y) thus we get  suitable output.\n",
+    "if x==y:\n",
+    "    print('reverse')\n",
+    "else:\n",
+    "    print('NR')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e7b5679a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
